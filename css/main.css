@@ -1,0 +1,97 @@
+body {
+background-color: gold;
+font-family: "Steamer", Georgia, serif
+}
+
+
+ul {
+    padding: 0px!important;
+}
+
+/* Estilo de Menu */
+
+.header-1 {
+width: 100%;
+text-align: center;
+padding: 20px;
+font-style:oblique; 
+
+}
+.menu ul li {
+    display: inline-block;
+    color: black;
+    margin-left: 20px;
+}
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+/* Estilo do Contact*/
+
+.contact {
+    width: 100%;
+    text-align: center;
+    margin-top: -50px;
+    }
+    .contact ul li {
+        display: inline-block;
+        color: black;
+        margin-left: 40px;
+    }
+    .contact ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+/*Distribuição do Espaçamento */
+
+    .header-1{
+        width:90%;
+        float:left;
+    }
+    .contact{
+        width:10%;
+        float:right;
+    }
+
+
+    
+    .col-100 {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+  
+    #intro .part1 {
+            background: url('/img/illustration.jpeg');
+            margin: auto;
+            left: 200px;
+            width: 370px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
+            height: 315px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
+            mix-blend-mode: multiply;
+            cursor: pointer;
+            }
+        @keyframes bounce {
+            0%, 20%, 60%, 100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+            }
+            80% {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+        }
+        #intro .part1{
+            animation: bounce 2s;
+        }
+    
