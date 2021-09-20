@@ -1,57 +1,50 @@
 body {
 background-color: gold;
-font-family: "Steamer", Georgia, serif
-}
-
-
-ul {
-    padding: 0px!important;
 }
 
 /* Estilo de Menu */
-
-.header-1 {
-width: 100%;
-text-align: center;
-padding: 20px;
-font-style:oblique; 
-
+nav{
+	width: 100%;
+	position: relative;
+    font-style:oblique; 
+	font-family: 'Ginger Bold';
+	font-size: 12px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-around;
+}
+nav ul{
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+	margin: auto;
 }
 .menu ul li {
     display: inline-block;
     color: black;
-    margin-left: 20px;
 }
+
 .menu ul li a {
     color: black;
     text-decoration: none;
-    font-size: 13px;
     text-transform: uppercase;
 }
 
 
 /* Estilo do Contact*/
 
-.contact {
-    width: 100%;
+nav .contact{
+    width: 35%;
     text-align: center;
-    margin-top: -50px;
-    }
-    .contact ul li {
-        display: inline-block;
-        color: black;
-        margin-left: 40px;
-    }
-    .contact ul li a {
-        color: black;
-        text-decoration: none;
-        font-size: 13px;
-        text-transform: uppercase;
-    }
+    margin-top: -54px;
+    color: black;
+}
+   
 
 /*Distribuição do Espaçamento */
 
-    .header-1{
+    .menu{
         width:90%;
         float:left;
     }
@@ -60,38 +53,46 @@ font-style:oblique;
         float:right;
     }
 
+    /*Seta de Rolagem */
 
-    
     .col-100 {
         width: 100%;
         float: left;
-        position: relative;
+        position:relative;
     }
-  
+    .scroll-arrow{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: 80px;
+    }
+    .scroll-arrow div{
+        position: relative;
+        width: 16px;
+        height: 2px;
+        background-color: #000;
+    }
+    .scroll-arrow div:first-child{
+        transform: skewY(20deg);
+    }
+    .scroll-arrow div:last-child{
+        transform: skewY(-20deg);
+    } 
+
+
     #intro .part1 {
-            background: url('/img/illustration.jpeg');
-            margin: auto;
-            left: 200px;
+            background: url('/img/illustration.jpeg') center no-repeat;
+            margin:auto;
             width: 370px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
             height: 315px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
             mix-blend-mode: multiply;
-            cursor: pointer;
             }
-        @keyframes bounce {
-            0%, 20%, 60%, 100% {
-                -webkit-transform: translateY(0);
-                transform: translateY(0);
-            }
-            40% {
-                -webkit-transform: translateY(-20px);
-                transform: translateY(-20px);
-            }
-            80% {
-                -webkit-transform: translateY(-10px);
-                transform: translateY(-10px);
-            }
-        }
-        #intro .part1{
-            animation: bounce 2s;
-        }
-    
+     
+
+    /*About Me */
+    #intro  .part2{
+        text-align: center;
+        float: left;
+        margin-top: 350px;
+    }
