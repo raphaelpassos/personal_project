@@ -1,14 +1,15 @@
 body {
 background-color: gold;
+width: 100%;
+height:100%;
 }
 
 /* Estilo de Menu */
 nav{
-	width: 100%;
 	position: relative;
     font-style:oblique; 
 	font-family: 'Ginger Bold';
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 	display: flex;
 	justify-content: space-around;
@@ -30,12 +31,16 @@ nav ul{
     text-decoration: none;
     text-transform: uppercase;
 }
+ 
+.menu ul li a:hover {
+    border-bottom: 2px solid white ;
+    
+}
 
 
 /* Estilo do Contact*/
 
 nav .contact{
-    width: 35%;
     text-align: center;
     margin-top: -54px;
     color: black;
@@ -45,25 +50,24 @@ nav .contact{
 /*Distribuição do Espaçamento */
 
     .menu{
-        width:90%;
+        width:80%;
         float:left;
     }
     .contact{
-        width:10%;
+        width:20%;
         float:right;
     }
 
     /*Seta de Rolagem */
 
-    .col-100 {
-        width: 100%;
+    .intro {
         float: left;
         position:relative;
     }
     .scroll-arrow{
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 30%;
         position: absolute;
         bottom: 80px;
     }
@@ -80,19 +84,13 @@ nav .contact{
         transform: skewY(-20deg);
     } 
 
+    /*Distribuição da imagem */
 
-    #intro .part1 {
-            background: url('/img/illustration.jpeg') center no-repeat;
-            margin:auto;
-            width: 370px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
-            height: 315px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
-            mix-blend-mode: multiply;
-            }
-     
+    .logo  {
+        mix-blend-mode: multiply;
+        }
 
     /*About Me */
     #intro  .part2{
         text-align: center;
-        float: left;
-        margin-top: 350px;
     }
